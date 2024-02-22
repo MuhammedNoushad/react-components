@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ProfileCard from "./Components/ProfileCard";
+
+const data = [
+  { id: 1, name: "Muhammed Noushad", email: "muhammed@test.com" },
+  { id: 2, name: "Aslah", email: "aslah@test.com" },
+  { id: 3, name: "Jasir", email: "jasir@test.com" },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {data.map((data) => (
+        <ProfileCard key={data.id} name={data.name} email={data.email} />
+      ))}
     </div>
   );
 }

@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.profile_card {
+  background-color: #ccc5b9;
+  border-radius: 1.2rem;
+  margin: 0 30%;
+  font-family: Manrope;
+  color: #252422;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.profile_card p {
+    color: #403d39;
+}
